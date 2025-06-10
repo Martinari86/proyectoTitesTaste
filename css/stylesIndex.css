@@ -27,6 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 75px;
 }
 
 .logo {
@@ -45,6 +46,19 @@ nav a {
   font-weight: bold;
 }
 
+#nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* fondo sutil al pasar el mouse */
+  color: white; /* tono claro para el texto al hacer hover */
+}
+
 .hamburger {
   display: none;
   background: none;
@@ -55,7 +69,11 @@ nav a {
 }
 
 .hero {
-  background: url("https://via.placeholder.com/1200x400");
+  background-image: url("../img/cocinaTT.jpeg");
+  background-size: cover; /* muestra toda la imagen */
+  background-repeat: no-repeat; /* no la repite */
+  background-position: center; /* la centra */
+  background-color: white; /* opcional: fondo de respaldo si la imagen no cubre */
   color: white;
   text-align: center;
   padding: 100px 20px;
@@ -71,6 +89,7 @@ nav a {
 }
 
 .content.alt {
+  padding: 60px 20px;
   background-color: #fff;
 }
 
@@ -197,7 +216,7 @@ footer a {
     flex-direction: column;
     background-color: #e54b4b;
     position: absolute;
-    top: 60px;
+    top: 75px;
     right: 0;
     width: 100%;
     text-align: right;

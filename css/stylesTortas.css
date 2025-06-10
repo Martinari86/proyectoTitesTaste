@@ -1,32 +1,79 @@
-body {
+* {
   margin: 0;
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #fafafa;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
   color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
   background-color: #e54b4b;
   color: white;
-  padding: 1rem;
-  text-align: center;
+  padding: 15px 0;
+  position: relative;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  height: 75px;
 }
 
-h1 {
-  margin: 0;
-  font-size: 2rem;
+.logo {
+  font-size: 1.8rem;
+  text-align: center;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* fondo sutil al pasar el mouse */
+  color: white; /* tono claro para el texto al hacer hover */
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #e54b4b;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px 20px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
 
 .menu-container {
   max-width: 1200px;
@@ -166,3 +213,41 @@ html, body {
   flex-grow: 1;
 }
 
+/* ---------- Icono Whatapp ---------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+footer {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #f06292;
+  text-decoration: none;
+}
