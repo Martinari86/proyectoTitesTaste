@@ -52,27 +52,6 @@ a:hover {
 }
 
 
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #e54b4b;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: right;
-    padding: 10px 20px;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
-}
 
 
 .menu-container {
@@ -211,6 +190,36 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #e54b4b;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px 20px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 2rem;
+  }
+
 }
 
 /* ---------- Icono Whatapp ---------- */
