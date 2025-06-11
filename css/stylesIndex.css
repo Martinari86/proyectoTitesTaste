@@ -37,18 +37,25 @@ header {
 nav ul {
   list-style: none;
   display: flex;
+  text-align: center;
   gap: 20px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  text-align: center;
   font-weight: bold;
+}
+
+a {
+  text-align: center;
 }
 
 #nav-links li a {
   color: white;
   text-decoration: none;
+  text-align: center;
   padding: 8px 12px;
   border-radius: 6px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -56,6 +63,7 @@ nav a {
 
 #nav-links li a:hover {
   background-color: rgba(255, 255, 255, 0.2); /* fondo sutil al pasar el mouse */
+  text-align: center;
   color: white; /* tono claro para el texto al hacer hover */
 }
 
@@ -210,7 +218,7 @@ footer a {
 
 
 /* ---------- Responsive Styles ---------- */
-@media (max-width: 768px) {
+@media (max-width: 915px) {
   nav ul {
     display: none;
     flex-direction: column;
